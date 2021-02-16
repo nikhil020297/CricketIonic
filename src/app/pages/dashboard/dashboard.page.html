@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="getBack()">
+        <ion-icon name="arrow-back" class="i-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+      <ion-thumbnail slot="start">
+        <ion-img [src]="countryData.icon" class="title-image"></ion-img>
+      </ion-thumbnail>
+      <ion-title slot="start" class="title-container">{{countryData.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+<div class="tab-container">
+<ion-segment value="stats" mode="md" [(ngModel)]="segmentModel"
+(ionChange)="segmentChanged($event)">
+  <ion-segment-button value="stats" class="ion-no-margin">
+    <ion-label>Team Stats</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="players" class="ion-no-margin">
+    <ion-label>Players</ion-label>
+  </ion-segment-button>
+</ion-segment>
+</div>
+<ion-card *ngIf="segmentModel === 'stats'" class="ion-no-margin ion-no-padding">
+  <app-team-stats></app-team-stats>
+</ion-card>
+
+
+<ion-card *ngIf="segmentModel === 'players'" class="ion-no-margin ion-no-padding">
+  <app-player-stats></app-player-stats>
+</ion-card>
+</ion-content>

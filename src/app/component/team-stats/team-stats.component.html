@@ -1,0 +1,91 @@
+<div>
+  <ion-card class="container-match-stats ion-no-padding ion-no-margin" mode="ios">
+    <ion-card-content class="ion-no-padding" fullscreen>
+
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col>
+            <div class="match_played">
+              <span class="played-title">Match <br> Played</span>
+              <br>
+              <br>
+              <span class="played-value">{{matchStats["match_stats"].match_played}}</span>
+            </div>
+          </ion-col>
+
+
+          <div class="match_won">
+            <ion-col>
+              <span class="played-title">Match <br> Won</span>
+            <br>
+            <br>
+            <span class="played-value">{{matchStats["match_stats"].match_won}}</span>
+            </ion-col>
+          </div>
+
+          <ion-col>
+            <div class="match_loosed">
+              <span class="played-title">Match <br> Loosed</span>
+              <br>
+              <br>
+              <span class="played-value">{{matchStats["match_stats"].match_lost}}</span>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </ion-card-content>
+  </ion-card>
+
+  <div class="text-match-view-container">
+    <span>Match Progress View</span>
+  </div>
+
+
+  <ion-card class="container-match-pb ion-no-padding ion-no-margin" mode="ios">
+    <ion-card-content>
+      <ion-progress-bar value={{wonPercent}}></ion-progress-bar>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="container-match-cup ion-no-padding ion-no-margin" mode="ios">
+    <ion-card-content class="ion-no-margin">
+      <div class="world-cup">
+        <span>World Cup Won : {{matchStats["cup_stats"].world_cup_won}}</span>
+      </div>
+
+      <div class="t20-cup">
+        <span>T20 Cup Won : {{matchStats["cup_stats"].t_20_won}} </span>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="container-team-stats ion-no-padding ion-no-margin" mode="ios">
+    <ion-card-content>
+
+      <div class="batting">
+        <ion-item lines="none" class="ion-no-padding">
+          <span class="name">Batting&nbsp;</span>
+          <ion-progress-bar value={{battingPercent}}></ion-progress-bar>
+          <span class="percent">{{(matchStats["team_stats"].batting + "%")}}</span>
+        </ion-item>
+      </div>
+
+      <div class="bowling">
+        <ion-item lines="none" class="ion-no-padding">
+          <span class="name">Bowling</span>
+          <ion-progress-bar value={{bowlingPercent}}></ion-progress-bar>
+          <span class="percent">{{(matchStats["team_stats"].bowling + "%")}}</span>
+        </ion-item>
+      </div>
+
+      <div class="fielding">
+        <ion-item lines="none" class="ion-no-padding ion-no-margin">
+          <span class="name">Fielding</span>
+          <ion-progress-bar value={{fielidingPercent}}></ion-progress-bar>
+          <span class="percent">{{(matchStats["team_stats"].fielding + "%")}}</span>
+        </ion-item>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  </div>

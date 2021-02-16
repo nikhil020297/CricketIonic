@@ -1,0 +1,22 @@
+<div>
+<ion-card class="ion-no-padding ion-no-margin">
+
+  <ion-item class="ion-no-margin ion-no-padding" line="none">
+    <span class="sr-number">Sr. No</span>
+    <span class="player-name">Player Name</span>
+    <span class="batting">Bat</span>
+    <span class="bowling">Ball</span>
+    <span class="w-keeper">W. Keeper</span>
+  </ion-item>
+
+  <ion-item class="player-container ion-no-margin ion-no-padding" line="none" *ngFor="let playerData of listPlayer" >
+    <span class="sr-number">{{playerData.srNo}}</span>
+    <span class="player-name">{{playerData.playerName}}</span>
+    <ion-icon class="batting" [name]="playerData.isBatting? 'checkmark' : ''" ></ion-icon>
+    <ion-icon class="bowling" [name]="playerData.isBalling? 'checkmark' : ''"></ion-icon>
+    <ion-icon class="w-keeper" [name]="playerData.isFielding? 'checkmark' : ''"></ion-icon>
+  </ion-item>
+
+
+</ion-card>
+</div>

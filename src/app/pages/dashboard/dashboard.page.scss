@@ -1,0 +1,44 @@
+.i-back{
+  color: grey;
+}
+
+.md .title-image{
+  text-align: start;
+
+}
+
+.md .title-container{
+  text-align: start;
+  padding-left: 2%;
+}
+
+.title-container{
+  text-align: start;
+  padding-left: 30%;
+}
+
+
+.tab-container{
+  background-color: #d8d8d8;
+  --border-radius: 0;
+
+}
+
+ion-segment-button {
+    --border-radius: 0 !important;
+    --background: #d8d8d8;
+    --background-hover: white;
+    --background-checked: white;
+    --background-focused: white;
+    --ripple-color: transparent;
+    --indicator-height: 0px;
+    --color-checked: black;
+    text-transform: initial;
+    --color: grey;
+}
+
+
+ion-card {
+  --background: transparent;
+  box-shadow: none !important;
+}

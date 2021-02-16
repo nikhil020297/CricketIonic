@@ -1,5 +1,7 @@
 {
   "name": "CricketIonicApp",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

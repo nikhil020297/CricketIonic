@@ -1,0 +1,91 @@
+ion-item {
+  --border-style: none;
+  --inner-border-width: 0px;
+  --inner-padding-bottom: 0px;
+  --inner-padding-end: 0px;
+  --inner-padding-start: 0px;
+  --inner-padding-top: 0px;
+}
+
+ion-card {
+  --background: transparent;
+  box-shadow: none !important;
+}
+
+.sr-number{
+  color: black;
+  width: 15vw;
+  margin-left: 4px;
+  font-size: 12px;
+  overflow: auto;
+}
+
+.player-name{
+  color: black;
+  width: 50vw;
+  font-size: 12px;
+  overflow: auto;
+}
+
+.batting{
+  color: black;
+  width: 12vw;
+  text-align: center;
+  font-size: 12px;
+  overflow: auto;
+}
+
+.bowling{
+  color: black;
+  width: 12vw;
+  text-align: center;
+  font-size: 12px;
+  overflow: auto;
+}
+
+.w-keeper{
+  color: black;
+  width: 25vw;
+  text-align: center;
+  font-size: 12px;
+  overflow: auto;
+}
+
+.player-container{
+  .sr-number{
+    color: black;
+    width: 15vw;
+    text-align: center;
+    margin-left: 4px;
+    font-size: 12px;
+    overflow: auto;
+  }
+
+  .player-name{
+    color: black;
+    width: 50vw;
+    font-size: 12px;
+    overflow: auto;
+  }
+
+  .batting{
+    color: green;
+    width: 12vw;
+    font-size: 14px;
+    overflow: auto;
+  }
+
+  .bowling{
+    color: green;
+    width: 12vw;
+    font-size: 14px;
+    overflow: auto;
+  }
+
+  .w-keeper{
+    color: green;
+    width: 25vw;
+    font-size: 14px;
+    overflow: auto;
+  }
+}

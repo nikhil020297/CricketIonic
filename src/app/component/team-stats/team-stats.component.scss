@@ -1,0 +1,107 @@
+
+
+.container-match-stats{
+  margin: 10px;
+  padding-right: 0px;
+}
+
+.match_played{
+  text-align: center;
+
+  .played-title{
+    font-size: large;
+    font-weight: 600;
+    color: black;
+  }
+
+  .played-value{
+
+    font-size: medium;
+    color: black;
+  }
+}
+
+
+.match_won{
+  text-align: center;
+  .played-title{
+    font-size: large;
+    font-weight: 600;
+    color: green;
+  }
+
+  .played-value{
+    font-size: medium;
+    color: green;
+  }
+}
+
+
+.match_loosed{
+  text-align: center;
+
+  .played-title{
+    font-size: large;
+    font-weight: 600;
+    color: red;
+  }
+
+  .played-value{
+
+    font-size: medium;
+    color: red;
+  }
+}
+
+.text-match-view-container{
+  margin-left: 15px;
+  margin-top: 8%;
+  font-weight: 600;
+  color: grey;
+}
+
+.container-match-pb{
+  margin: 10px;
+}
+
+.container-match-cup{
+  margin: 10px;
+  text-transform: initial;
+  font-size: medium;
+  font-weight: 500;
+  color: black;
+
+  .t20-cup{
+    margin-top: 10px;
+  }
+}
+
+.container-team-stats{
+  margin: 10px;
+  padding: 0px;
+  ion-progress-bar {
+  --background: #d8d8d8;
+  --buffer-background: #d8d8d8;
+  --progress-background: black;
+    height: 15px;
+    border-radius: 6px;
+    margin-left: 10px;
+  }
+
+  .percent{
+    margin-left: 10px;
+    font-size: x-small;
+  }
+
+  .name{
+    font-size: smaller;
+  }
+}
+
+ion-progress-bar {
+  --background: red;
+  --buffer-background: red;
+  --progress-background: green;
+  height: 15px;
+  border-radius: 6px;
+}
